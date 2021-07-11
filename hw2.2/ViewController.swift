@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         colorDisplay.backgroundColor = UIColor(displayP3Red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
         
-        redColorIndex.text = String(redSlider.value)
+        redColorIndex.text = String(format: "%.2f", redSlider.value)
     }
     
     @IBAction func greenSliderChanged(_ sender: UISlider) {
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         colorDisplay.backgroundColor = UIColor(displayP3Red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
         
-        greenColorIndex.text = String(greenSlider.value)
+        greenColorIndex.text = String(format: "%.2f", greenSlider.value)
     }
     
     
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         
         colorDisplay.backgroundColor = UIColor(displayP3Red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
         
-        blueColorIndex.text = String(blueSlider.value)
+        blueColorIndex.text = String(format: "%.2f", blueSlider.value)
     }
     
     
