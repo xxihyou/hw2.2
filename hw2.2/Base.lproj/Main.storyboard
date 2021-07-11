@@ -18,9 +18,6 @@
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-za-rWN">
                                 <rect key="frame" x="177" y="306" width="219" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="JMX-KX-cKU"/>
-                                </constraints>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ELL-ZB-kXu"/>
@@ -34,9 +31,6 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YK3-Ut-m9Q">
                                 <rect key="frame" x="177" y="344" width="219" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="70w-fm-kNA"/>
-                                </constraints>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <action selector="greenSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MFS-Hn-PRs"/>
@@ -56,9 +50,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Rl-Os-YDz">
                                 <rect key="frame" x="177" y="382" width="219" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="UwO-ha-4ej"/>
-                                </constraints>
+                                <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <connections>
                                     <action selector="blueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="sSh-3F-oDf"/>
                                 </connections>
@@ -79,6 +71,7 @@
                                 <rect key="frame" x="20" y="44" width="374" height="239"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZPw-uP-sQT" secondAttribute="height" multiplier="374:239" id="H0q-Hi-uCI"/>
                                     <constraint firstAttribute="height" constant="239" id="JS5-Te-mSG"/>
                                 </constraints>
                             </view>
@@ -115,7 +108,6 @@
                             <constraint firstItem="ZPw-uP-sQT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g33-4W-aoF"/>
                             <constraint firstItem="1Rl-Os-YDz" firstAttribute="top" secondItem="YK3-Ut-m9Q" secondAttribute="bottom" constant="8" symbolic="YES" id="gmy-fZ-35a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1aP-za-rWN" secondAttribute="trailing" constant="20" id="hWt-hL-9xp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Rl-Os-YDz" secondAttribute="bottom" constant="450" id="iFN-fh-Hk9"/>
                             <constraint firstItem="OPy-oR-UAz" firstAttribute="top" secondItem="eTq-N6-qZV" secondAttribute="bottom" constant="17.5" id="y0d-pR-MI9"/>
                             <constraint firstItem="1aP-za-rWN" firstAttribute="top" secondItem="ZPw-uP-sQT" secondAttribute="bottom" constant="23" id="yJ5-eV-mT1"/>
                         </constraints>
@@ -138,6 +130,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
